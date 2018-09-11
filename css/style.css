@@ -31,7 +31,7 @@ body{
   font-size: 10px;
   box-sizing: border-box;
   color: rgba(255, 255, 255, 0.6);
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   line-height: 25px;
   background: rgba(0, 0, 0, 0.5);
