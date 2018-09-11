@@ -10,7 +10,7 @@ body{
   margin: 0 auto;
   flex-wrap: wrap;
   flex-direction: column;
-  align-content: stretch;
+  align-content: center;
   justify-content: center;
   max-width: 700px;
   position: relative;
