@@ -1,0 +1,247 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  width:100vw !important;
+  height:100vh !important;
+}
+
+.tijdlijn {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: center;
+  max-width: 700px;
+  position: relative;
+}
+
+.tijdlijn-content-title {
+  font-weight: normal;
+  font-size: 18px;
+  margin: 10px 0 0 5px;
+  transition: .4s;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+.tijdlijn-content-beschrijving {
+  margin: 0;
+  font-size: 10px;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Open Sans";
+  font-weight: normal;
+  line-height: 25px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding:3%;    
+}
+
+/*------de tijdlijn streep-------*/
+.tijdlijn:before {
+  position: absolute;
+  left: 40px;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+  content: "";
+  background: rgba(0, 0, 0, 0.5);    
+}
+
+.tijdlijn-item {
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 0 30px 150px 80px;
+}
+
+/*----titel van tijdlijn item----*/
+.tijdlijn-item:before {
+  content: attr(data-text);
+  position: absolute;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  left: 10px;
+  padding: 0;
+  top: 50px;
+  text-align: center ;
+  width: 60px;
+  border: none;
+}
+
+.tijdlijn-item:last-child {
+  padding-bottom: 40px;
+}
+
+.tijdlijn-img {
+  max-width: 100%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.tijdlijn-container {
+  width: 100%;
+  position: relative;
+  padding: 80px 0;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.tijdlijn-container:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(99, 99, 99, 0.8);
+  content: "";
+}
+
+.tijdlijn-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.tijdlijn-header-title {
+  color: #fff;
+  font-size: 28px;
+  font-family: Raleway;
+  font-weight: normal;
+  margin: 0;
+}
+
+.tijdlijn-header-subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Raleway";
+  font-size: 14px;
+  letter-spacing: 5px;
+  margin: 10px 0 0 0;
+  font-weight: normal;
+}
+
+@media only screen and (min-width: 768px){
+.tijdlijn-content-title { 
+  font-size: 24px;
+}
+
+.tijdlijn-content-beschrijving {
+  font-size: 12px;
+}
+.tijdlijn-header-title {
+  font-size: 40px;
+}
+.tijdlijn-header-subtitle {
+  font-size: 16px;
+}
+}
+
+@media only screen and (min-width: 1024px){
+.tijdlijn{
+  max-width:90%;
+}
+
+.tijdlijn:before {
+  left: 50%;
+}
+
+.tijdlijn-item {
+  padding: 40px 0;
+  opacity: .3;
+  filter: blur(2px);
+  transition: .5s;
+  box-sizing: border-box;
+  width: calc(50% - 40px);
+  display: flex;
+  position: relative;
+  transform: translateY(-80px);
+}
+
+.tijdlijn-item:before {
+  width: 100%;
+  position: absolute !important;
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  top: 70%;
+  margin-top: -5px;
+  padding-left: 15px;
+  font-size: 25px;
+  left:auto;
+  right: calc(-100% - 56px);
+}
+
+.tijdlijn-item{
+  align-self: flex-start;
+}
+.tijdlijn-item:nth-child(even) {
+  align-self: flex-end;
+}
+
+.tijdlijn-item:nth-child(even):before {
+  right: auto;
+  text-align: right;
+  left: calc(-100% - 56px );
+  padding-left: 0;
+  border-left: none;
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  padding-right: 15px;
+}
+
+.tijdlijn-item:last-child {
+    padding-bottom: 0;
+  }
+
+.tijdlijn-item-active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0px);
+}
+
+.tijdlijn-item-active:before {
+  top: 50%;
+  transition: .3s all .2s;
+  opacity: 1;
+}
+
+.tijdlijn-item-active .tijdlijn-content-title {
+  margin: -30px 0 10px 10px;
+}
+}
+
+@media only screen and (min-width: 1440px){
+.tijdlijn{
+  max-width: 700px;
+
+}
+
+.tijdlijn-content-title { 
+  font-size: 28px;
+}
+
+.tijdlijn-content-beschrijving {
+  font-size: 14px;
+}
+.tijdlijn-header-title {
+  font-size: 44px;
+}
+.tijdlijn-header-subtitle {
+  font-size: 20px;
+}
+
+  .tijdlijn-item {
+  width: calc(60% - 120px);
+}
+
+.tijdlijn-item:before{
+  right: calc(-100% - 66px);
+}
+
+.tijdlijn-item:nth-child(even):before{
+  left: calc(-100% - 66px);
+
+} 
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>tijdlijn</title>
+  <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   
+    <main class="tijdlijn-container" id="tijdlijn">
+      <section class="tijdlijn-header">
+        <h2 class="tijdlijn-header-title">History of Responsive Design</h2>
+        <h3 class="tijdlijn-header-subtitle">Timeline</h3>
+      </section>
+      <section class="tijdlijn">
+        <section class="tijdlijn-item" data-text="From paper to pixels">
+          <section class="tijdlijn-content"><img class="tijdlijn-img" src="images/paper_to_pixels.jpg"/>
+            <h2 class="tijdlijn-content-title">1990's</h2>
+            <section class="tijdlijn-content-beschrijving">
+              <p>
+                Toen het web in de jaren negentig de wereld begon te veroveren, begonnen ontwerpers te migreren van papier naar pixels. Het boek Creating Killer Websites van David Siegel bevatte TABLE- en GIF-hacks waarmee designers dezelfde soort lay-outs konden repliceren die ze eerder voor de afgedrukte pagina hadden gemaakt.
+              </p>
+              <p>
+                Deze TABLE-lay-outs werden later CSS-lay-outs, maar het fundamentele denken bleef hetzelfde: het browservenster, net als papier ervoor, werd behandeld als een bekende beperking waaraan ontwerpers de volgorde oplegden. Er is een probleem met deze aanpak. Terwijl een stuk papier een vaste verhouding heeft, kan een browservenster elke grootte hebben. Er is geen manier voor een webdesigner om van tevoren te weten welke grootte het browservenster van een bepaalde persoon zal zijn.
+              </p>
+            </section>
+          </section>
+        </section>        
+
+        <section class="tijdlijn-item" data-text="The lay-out Conundrum">
+          <section class="tijdlijn-content"><img class="tijdlijn-img" src="images/screensize.jpg"/>
+            <h2 class="tijdlijn-content-title">2005</h2>
+            <section class="tijdlijn-content-beschrijving">
+            <p>Tegen het midden van het eerste decennium van de eenentwintigste eeuw werd het gebied van webdesign gesteund door meerdere aannames:</p>
+            <ul>
+              <li>Dat iedereen een apparaat gebruikte die een 960 pixel brede lay-out kon bekijken.</li>
+              <li>Dat iedereen een internetsnelheid bevatte waardoor de noodzaak om bestandsgroottes te verkleinen beperkt werd.</li>
+              <li>Dat iedereen een moderne webbrowser gebruikte.</li>
+            </ul>
+            <p>
+            Daarom waren er webdesigners die van mening waren dat een vloeiende lay-out van zeer belang was en dat er in Photoshop ontworpen moet worden maar zij werden sterk genegeerd. Daarentegen waren er andere designers die van mening waren dat een vloeiende lay-out niet nodig was en dat je gewoon in CSS en HTML kon ontwerpen.
+            </p>
+            </section>
+          </section>
+        </section>
+
+        <section class="tijdlijn-item" data-text="The emergence of the iPhone">
+          <section class="tijdlijn-content"><img class="tijdlijn-img" src="images/iPhone.jpeg"/>
+            <h2 class="tijdlijn-content-title">2007</h2>
+            <section class="tijdlijn-content-beschrijving">
+              <p>
+                Deze discussie stopte nadat Steve Jobs de iPhone in 2007 uithaalde.
+              </p>
+              <p>
+                Uiteraard bestonden er vóór de iPhone al web-geschikte mobiele apparaten, maar deze waren meestal beperkt tot het weergeven van een gespecialiseerd mobielvriendelijk bestandsformaat genaamd Wireless Markup Language. Zeer weinig apparaten konden HTML weergeven. Met de introductie van de iPhone en haar concurrenten kwamen mobiele apparaten met webbrowsers boven op de ranglijst van websurfers.
+              </p>
+              <p>
+                Dit gooide het veld van webdesign in beroering. De designers hadden de mobiele web in een eigen domein geplaatst waardoor mobielen verstuurd werden naar speciale domeinen zoals “m.facebook.com”. Dat bleek problematisch te zijn na de komst van andere apparaten waardoor het onmogelijk werd up-to-date te blijven. 
+              </p>
+            </section>
+          </section>
+        </section>
+
+        <section class="tijdlijn-item" data-text="The Emergence of One Web">
+          <section class="tijdlijn-content"><img class="tijdlijn-img" src="images/one_web.png"/>
+            <h2 class="tijdlijn-content-title">2007 - 2010</h2>
+            <section class="tijdlijn-content-beschrijving">
+              <p>
+                De praktijk van verschillende website te maken voor verschillende apparaten sloeg nergens op. Daarbij druiste deze praktijk tegen “One Web”, een lang bestaand ideaal.
+              </p>
+              <p>
+                Volgens de W3C guidelines for mobile best practices betekent One Web: <blockquote>"One Web means making, as far as is reasonable, the same information and services available to users irrespective of the device they are using. However, it does not mean that exactly the same information is available in exactly the same representation across all devices."</blockquote>
+              </p>
+              <p>
+                Om dit te bereiken moesten webdesigners dezelfde kerncontent op dezelfde URL weergeven, ongeacht het apparaat. Tegelijkertijd moesten ze verschillende lay-outs kunnen maken, afhankelijk van de beschikbare schermgrootte. Hierdoor werd de gedeelde illusie van een one-size-fits-all benadering van webdesign geleidelijk vervangen door een aanvaarding van de steeds veranderende vloeiende aard van het web.
+              </p>
+            </section>
+          </section>
+        </section>
+
+        <section class="tijdlijn-item" data-text="Responsive Web Design">
+          <section class="tijdlijn-content"><img class="tijdlijn-img" src="images/Responsive-web-design-devices.jpg"/>
+            <h2 class="tijdlijn-content-title">April  2010</h2>
+            <section class="tijdlijn-content-beschrijving">
+              <p>
+                In April 2010 schreef Ethan Marcotte over de concept responsive design binnen de architectuur wereld. Het idee was dat gebouwen kunnen veranderen en aanpassen aan de behoeften van de mensen die het gebouw gebruiken. Hij legde uit dat webdesign hierdoor geïnspireerd kon worden. Om dit te kunnen bereiken zouden de volgende tools gecombineerd moeten worden in één ontwerp.
+                <ul>
+                  <li>Fluid grids. De optie om percentages te gebruiken in plaats van pixels.</li>
+                  <li>Flexible images. De intrinsieke dimensies van een afbeelding hoeven geen beperkende factor te zijn.</li>
+                  <li>Media queries. De mogelijkheid om stijlen te definiëren op basis van bepaalde parameters, zoals de afmetingen van het browservenster.</li>
+                </ul>
+              </p>
+            </section>
+          </section>
+        </section>
+
+        <section class="tijdlijn-item" data-text="Mobile first">
+          <section class="tijdlijn-content"><img class="tijdlijn-img" src="images/Luke_mobileFirst.jpg"/>
+            <h2 class="tijdlijn-content-title">October 2011</h2>
+            <section class="tijdlijn-content-beschrijving">
+              <p>
+                Hoewel er eerste stappen werden genomen om responsive designs te implementeren, zoals pixels omzetten tot percentages en om media queries toe te voegen, bood deze geen stevige basis om op te bouwen. Dankzij Luke Wroblewski werd het een meer veerkrachtige aanpak. Hij bedacht de term “mobile first” door het succes van mobiele apparaten.
+              </p>
+              <p>
+                Mobile first betekent het volgende: <blockquote>Als de inhoud van de website geprioriteerd kan worden en deze binnen de beperkte ruimte van een klein scherm kan werken, is er een robuust, veerkrachtig ontwerp gemaakt waarop gebouwd kan worden voor grotere schermformaten.</blockquote>
+              </p>
+            </section>
+          </section>
+        </section>
+
+        <section class="tijdlijn-item" data-text="Mobile first expanded">
+          <section class="tijdlijn-content"><img class="tijdlijn-img" src="images/mobile-first2.jpg"/>
+            <h2 class="tijdlijn-content-title">2011</h2>
+            <section class="tijdlijn-content-beschrijving">
+              <p>
+                Stephanie en Bryan Rieger hadden de mobile first aanpak uitgebreid. Ze beweren dat het ontbreken van een media query je eerste mediaquery is.
+              </p>
+              <p>
+                In deze context gaat Mobile First minder over mobiele apparaten en richt het zich in plaats daarvan op het prioriteren van inhoud en taken, ongeacht het apparaat. Het ontmoedigt aannames. In het verleden waren webdesigners fout gegaan door ongefundeerde veronderstellingen te maken over desktopapparaten. Nu is het even belangrijk om aannames over mobiele apparaten te vermijden. 
+              </p>
+            </section>
+          </section>
+        </section>
+
+        <section class="tijdlijn-item" data-text="Responsive web design in the present day">
+          <section class="tijdlijn-content"><img class="tijdlijn-img" src="images/responsive_web_design.png"/>
+            <h2 class="tijdlijn-content-title">Present day</h2>
+            <section class="tijdlijn-content-beschrijving">
+              <p>
+                Jarenlang werd webdesign bepaald door de designer. De gebruiker had geen andere keuze dan tegemoet te komen aan de vraag van de site naar een scherm van een bepaalde grootte of een netwerkverbinding van een bepaalde snelheid. Tegenwoordig kan webontwerp een gesprek zijn tussen de ontwerper en de gebruiker. Nu kan webdesign de onderliggende principes van het web zelf weerspiegelen.
+              </p>
+            </section>
+          </section>
+        </section>
+        </section>
+      </main>
+  <footer>
+
+  </footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+  <script src="js/index.js"></script>
+
+</body>
+</html>
